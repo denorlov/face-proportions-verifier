@@ -113,7 +113,8 @@ def draw_vertical_proportions():
 
 def setup():
     global bottom_nose_x, bottom_nose_y, chin_x, chin_y, eye_x, eye_y
-    global left_eye_x, left_eye_y, right_eye_x, right_eye_y
+    global left_eye_x, left_eye_y
+    global right_eye_x, right_eye_y
     global screensize_x, screensize_y
 
     screensize_x, screensize_y = turtle.screensize()
