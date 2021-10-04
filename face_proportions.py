@@ -21,95 +21,21 @@ right_eye_x, right_eye_y = 0, 0
 screensize_x, screensize_y = 0, 0
 
 def draw_horizontal_proportions():
-    delta = chin_y - bottom_nose_y
+    # допишите здесь управление черепахой
+    # которая будет размечать горизонтальные линии-пропорции
+    # одна из них должна обозначить линию губ
+    # другая должна обозначить линию глаз
 
-    turtle.up()
-    turtle.color("lime")
-    turtle.goto(-screensize_x, chin_y)
-    turtle.down()
-    turtle.goto(screensize_x, chin_y)
-    turtle.up()
-
-    turtle.up()
-    turtle.color("blue")
-    turtle.goto(-screensize_x, bottom_nose_y + delta / 3)
-    turtle.down()
-    turtle.goto(screensize_x, bottom_nose_y + delta / 3)
-    turtle.up()
-
-    turtle.up()
-    turtle.color("lime")
-    turtle.goto(-screensize_x, bottom_nose_y)
-    turtle.down()
-    turtle.goto(screensize_x, bottom_nose_y)
-    turtle.up()
-
-    turtle.up()
-    turtle.goto(-screensize_x, bottom_nose_y - delta)
-    turtle.down()
-    turtle.goto(screensize_x, bottom_nose_y - delta)
-    turtle.up()
-
-    turtle.up()
-    turtle.goto(-screensize_x, bottom_nose_y - 2 * delta)
-    turtle.down()
-    turtle.goto(screensize_x, bottom_nose_y - 2 * delta)
-    turtle.up()
-
-    turtle.up()
-    turtle.color('blue')
-    turtle.goto(-screensize_x, bottom_nose_y - 2 * delta - delta / 2)
-    turtle.down()
-    turtle.goto(screensize_x, bottom_nose_y - 2 * delta - delta / 2)
-    turtle.up()
-
-    turtle.up()
-    turtle.goto(-screensize_x, chin_y - (delta / 2) * 7 / 2)
-    turtle.down()
-    turtle.goto(screensize_x, chin_y - (delta / 2) * 7 / 2)
-    turtle.up()
+    turtle.color('lemon')
+    # ...
 
 
 def draw_vertical_proportions():
-    delta = abs(left_eye_x - right_eye_x)
+    # допишите здесь управление черепахой
+    # которая будет размечать вертикальные линии-пропорции лица
 
     turtle.color('orange')
-
-    turtle.up()
-    turtle.goto(left_eye_x, -screensize_y)
-    turtle.down()
-    turtle.goto(left_eye_x, screensize_y)
-    turtle.up()
-
-    turtle.up()
-    turtle.goto(right_eye_x, -screensize_y)
-    turtle.down()
-    turtle.goto(right_eye_x, screensize_y)
-    turtle.up()
-
-    turtle.up()
-    turtle.goto(left_eye_x - delta, -screensize_y)
-    turtle.down()
-    turtle.goto(left_eye_x - delta, screensize_y)
-    turtle.up()
-
-    turtle.up()
-    turtle.goto(left_eye_x - 2 * delta, -screensize_y)
-    turtle.down()
-    turtle.goto(left_eye_x - 2 * delta, screensize_y)
-    turtle.up()
-
-    turtle.up()
-    turtle.goto(right_eye_x + delta, -screensize_y)
-    turtle.down()
-    turtle.goto(right_eye_x + delta, screensize_y)
-    turtle.up()
-
-    turtle.up()
-    turtle.goto(right_eye_x + 2 * delta, -screensize_y)
-    turtle.down()
-    turtle.goto(right_eye_x + 2 * delta, screensize_y)
-    turtle.up()
+    # ...
 
 def setup():
     global bottom_nose_x, bottom_nose_y, chin_x, chin_y, eye_x, eye_y
